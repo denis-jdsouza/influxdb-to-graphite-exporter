@@ -20,6 +20,9 @@ mem_usage.percentage;source=influx;type=metrics;host=web-02 25.67828499917238 16
 Metrics sent for: 2 queries
 ```
 
+## Grafana Graph (Graphite)
+<img src="img/influxdb-to-graphite-exporter.png" width="750">
+
 ## Dependencies
 - Python v3.6
 - InfluxDB endpoint should be accessible
