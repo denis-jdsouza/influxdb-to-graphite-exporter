@@ -11,8 +11,8 @@ INFLUX_DETAILS = (
 
 # InfluxDB queries (includes time-range to query data)
 INFLUX_QUERY = (
-	'SELECT mean("usage_user") FROM "cpu" WHERE "server_name" =~ /^web-/ AND time > now() -1m GROUP BY time(1m), "host"',
-    'SELECT mean("used_percent") FROM "mem" WHERE "server_name" =~ /^web-/ AND time > now() -1m GROUP BY time(1m), "host"'
+	'SELECT mean("usage_user") FROM "cpu" WHERE "host" =~ /^web-/ AND time > now() -1m GROUP BY time(1m), "host"',
+    'SELECT mean("used_percent") FROM "mem" WHERE "host" =~ /^web-/ AND time > now() -1m GROUP BY time(1m), "host"'
 )
 
 # InfluxDB query groupby (used to extract values from InfluxDB query output)
